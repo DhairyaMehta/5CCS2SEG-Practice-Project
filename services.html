@@ -8,6 +8,7 @@
   	<meta name="author" content="D Mehta and Group">
     <title>King's College London | Module Selector</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="js/modules.js"> </script>
   </head>
   <body>
     <header>
@@ -39,7 +40,7 @@
             <li>
               <h2><b>Optional Modules</b></h2>
               <p>Students will choose 90 credits from a range of modules that may include:</p>
-              <p><a href="#Agents & Multi Agent Systems" title="Agents & Multi Agent Systems">Agents &amp; Multi Agent Systems (15 credits)</a></p>
+              <p><a onclick="modules()" href="javascript:void(0)" title="Agents & Multi Agent Systems">Agents &amp; Multi Agent Systems (15 credits)</a></p>
               <p><a href="#Computer Vision" title="Computer Vision">Computer Vision (15 credits)</a></p>
               <p><a href="#Pattern Recognition" title="Pattern Recognition">Pattern Recognition (15 credits)</a></p>
               <p><a href="#Automata & Formal Languages" title="Automata & Formal Languages">Automata &amp; Formal Languages (15 credits)</a></p>
@@ -68,10 +69,14 @@
         </article>
 
         <aside id="sidebar">
+          <div class="moduleDescription">
+            <h3> Module Description </h3>
+            <textarea id="module_description" readonly>
+            </textarea>
+          </div>
           <div class="dark">
             <h3>Modules Selected:</h3>
             <form class="quote">
-
   						<button class="button_1" type="submit">Submit</button>
 					</form>
           </div>
